@@ -1,6 +1,10 @@
-hdkey
+hdkey Testing versions
 =====
+This repository is purely for testing and might contain some untoward changes.
+Kindly refer to the [actual cryptocoinjs hdkey repository](https://github.com/cryptocoinjs/hdkey) for any queries.
 
+Thank you
+=====
 [![NPM Package](https://img.shields.io/npm/v/hdkey.svg?style=flat-square)](https://www.npmjs.org/package/hdkey)
 [![build status](https://secure.travis-ci.org/cryptocoinjs/hdkey.svg)](http://travis-ci.org/cryptocoinjs/hdkey)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
