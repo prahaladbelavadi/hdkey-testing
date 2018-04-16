@@ -25,11 +25,21 @@ function convtoJson(){
   var seed = 'fffcf9f6f3f0edeae7e4e1dedbd8d5d2cfccc9c6c3c0bdbab7b4b1aeaba8a5a29f9c999693908d8a8784817e7b7875726f6c696663605d5a5754514e4b484542'
   var hdkey = HDKey.fromMasterSeed(Buffer.from(seed, 'hex'))
   HDkeytojson = hdkey.toJSON()
-  console.log("JSON output:"+"\n", HDkeytojson)
+  console.log("JSON output:"+"\n", HDkeytojson, '\n')
+}
+
+function deriveFromPath(){
+  var seed = 'fffcf9f6f3f0edeae7e4e1dedbd8d5d2cfccc9c6c3c0bdbab7b4b1aeaba8a5a29f9c999693908d8a8784817e7b7875726f6c696663605d5a5754514e4b484542'
+  var hdkey = HDKey.fromMasterSeed(Buffer.from(seed, 'hex'))
+  var keyPath = "m/0/2147483647'/2"
+  var childkey = hdkey.derive(keyPath)
+
+  console.log(childkey.privateExtendedKey)
+  console.log(childkey.publicExtendedKey)
 }
 
 genExtendedKeyfromMasterSeed()
 fromExtendedPrivKey()
 fromExtendedPubKey()
 convtoJson()
-// convtoJson2()
+deriveFromPath()
