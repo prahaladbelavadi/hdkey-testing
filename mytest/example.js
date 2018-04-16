@@ -24,11 +24,18 @@ function fromExtendedPubKey(){
 function convtoJson(){
   var seed = 'fffcf9f6f3f0edeae7e4e1dedbd8d5d2cfccc9c6c3c0bdbab7b4b1aeaba8a5a29f9c999693908d8a8784817e7b7875726f6c696663605d5a5754514e4b484542'
   var hdkey = HDKey.fromMasterSeed(Buffer.from(seed, 'hex'))
+  HDkeytojson = hdkey.toJSON()
+  console.log("JSON output:"+"\n", HDkeytojson)
+}
 
-  console.log("JSON output:"+"\n", hdkey.toJSON())
+function convtoJson2(){
+  var key = 'xpub6FnCn6nSzZAw5Tw7cgR9bi15UV96gLZhjDstkXXxvCLsUXBGXPdSnLFbdpq8p9HmGsApME5hQTZ3emM2rnY5agb9rXpVGyy3bdW6EEgAtqt'
+  var hdkey = HDKey.fromExtendedKey(key)
+  console.log(hdkey.toJSON());
 }
 
 genExtendedKeyfromMasterSeed()
 fromExtendedPrivKey()
 fromExtendedPubKey()
 convtoJson()
+convtoJson2()
