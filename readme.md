@@ -10,3 +10,6 @@ For switching python envs using anaconda:
 - https://conda.io/docs/user-guide/tasks/manage-environments.html
 - https://conda.io/docs/user-guide/tasks/manage-python.html
 - https://conda.io/docs/user-guide/tasks/manage-environments.html#activating-an-environment
+
+On Hardened Keys:
+[Reference: Bitoin talk forum](https://bitcointalk.org/index.php?topic=679487.0)
