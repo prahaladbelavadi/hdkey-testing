@@ -26,4 +26,4 @@ On Hardened Keys:
   - [Bitcoin wallets 1](https://steemit.com/bitcoin/@sevcsik/working-with-bitcoin-hd-wallets-key-derivation)
   - [Hardened Keys](https://bitcoin.org/en/developer-guide#hardened-keys)
   - [Blue ledger password manager app](https://github.com/belavadi/blue-app-password-manager)
-  - 
+- [Bitcoin JS ](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration/bip32.js#L50)
