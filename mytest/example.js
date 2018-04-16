@@ -28,14 +28,8 @@ function convtoJson(){
   console.log("JSON output:"+"\n", HDkeytojson)
 }
 
-function convtoJson2(){
-  var key = 'xpub6FnCn6nSzZAw5Tw7cgR9bi15UV96gLZhjDstkXXxvCLsUXBGXPdSnLFbdpq8p9HmGsApME5hQTZ3emM2rnY5agb9rXpVGyy3bdW6EEgAtqt'
-  var hdkey = HDKey.fromExtendedKey(key)
-  console.log(hdkey.toJSON());
-}
-
 genExtendedKeyfromMasterSeed()
 fromExtendedPrivKey()
 fromExtendedPubKey()
 convtoJson()
-convtoJson2()
+// convtoJson2()
